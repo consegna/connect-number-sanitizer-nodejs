@@ -17,4 +17,4 @@ As with many things you can take this in many different directions.
 - You could improve the code logic so that you get different messages that allow you to make routing decisions
 - You could wrap this up in your IaC provider of choice and get everything deployed via your favourite CI/CD pipeline
 
-Consegna.Cloud, 2021
+Justin Susans, 2021
