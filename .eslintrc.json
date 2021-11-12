@@ -1,0 +1,49 @@
+{
+    "env": {
+        "commonjs": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "google"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 12
+    },
+    "plugins": [
+        "snakecasejs"
+    ],
+    "settings": {
+        "snakecasejs/filter": [],
+        "snakecasejs/whitelist": [
+            "PhoneNumberFormat",
+            "PhoneNumberUtil",
+            "isValidNumber"
+        ]
+    },
+    "ignorePatterns": [
+        "function/*.test.js"
+    ],
+    "rules": {
+        "snakecasejs/snakecasejs": "error",
+        "max-len": [
+            "error",
+            {
+                "code": 100
+            }
+        ]
+    },
+    "overrides": [
+        {
+            "files": [
+                "*.js"
+            ],
+            "rules": {
+                "camelcase": [
+                    "off"
+                ]
+            }
+        }
+    ]
+}
