@@ -19,7 +19,8 @@
         "snakecasejs/whitelist": [
             "PhoneNumberFormat",
             "PhoneNumberUtil",
-            "isValidNumber"
+            "isValidNumber",
+            "getInstance"
         ]
     },
     "ignorePatterns": [

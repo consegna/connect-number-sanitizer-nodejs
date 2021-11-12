@@ -77,8 +77,8 @@ function sanitize_number(phone_number, country) {
       // Trim any brackets, whitespace, bad characters that come along
       // in National Format so it can be read to the user
       const nat_format = phone_util.format(parsed_num, phone_number_format.NATIONAL)
-        .replace('-', '').replace('(', '')
-        .replace(')', '').replace(/\s/g, '');
+          .replace('-', '').replace('(', '')
+          .replace(')', '').replace(/\s/g, '');
       const response = {};
       console.log('Phone number is reported as', is_valid);
       if (is_valid) {
