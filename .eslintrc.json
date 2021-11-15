@@ -24,7 +24,7 @@
         ]
     },
     "ignorePatterns": [
-        "function/*.test.js"
+        "tests/*.test.js"
     ],
     "rules": {
         "snakecasejs/snakecasejs": "error",
