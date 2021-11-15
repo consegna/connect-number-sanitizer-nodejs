@@ -24,7 +24,7 @@ exports.handler = async (event, context) => {
           "message": "SUCCESS" or "FAILURE" based on the outcome
           "sanitized_number": The requested number in NATIONAL format for reading back
             to the user
-          "phone_number": The E164 format phone number that should be used
+          "phone_number": The E164 format phone number that should be used within Connect
         }
   */
   console.log('Starting event with event', JSON.stringify(event));
@@ -55,7 +55,9 @@ exports.handler = async (event, context) => {
 };
 
 /**
-  * This function handles the main encoding of the JUnit file.
+  * This function handles the core sanitization process, taking a number
+  * and figuring out the standard it has started with before generating an
+  * output that is sent back.
   * @param {string} phone_number The phone number as extracted from the event
   * @param {string} country The ISO country code from the event, or NZ by default
   * @return {object} The parsing result

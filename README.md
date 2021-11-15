@@ -11,7 +11,7 @@ Make sure you include the `google-libphonenumber` package either in your uploade
 
 ## Deploying to Lambda
 
-Everything that should be needed to deploy a successful Lambda package is included. Since it only requires a single package this keeps the package light overall.
+Everything that should be needed to deploy a successful Lambda package is included. Since it only requires a single dependency this keeps the package light overall.
 
 To generate the package that can then be used:
 
@@ -19,9 +19,9 @@ To generate the package that can then be used:
 1. Run the regular `npm install` command to install all dependencies
 2. Complete any updates or modifications as required. Be sure to add/alter any tests that would be impacted, as your packaging will fail otherwise.
 3. Run the command `npm run package`. This will step through linting, unit tests, and finally generate a ZIP file. Note that if you use the inbuilt `pack` command you will get a `.tgz` file, which is not desired. You always want the `.zip` version.
-4. Once satisfied upload the ZIP using your preferred method. Recommendation is to use an IaC control, such as CloudFormation or Terraform, but in the simplest case uploading the ZIP via the console should behave as expected. Note that the Lambda Handler wll be `index.handler`
+4. Once satisfied upload the ZIP using your preferred method. Recommendation is to use an IaC control, such as CloudFormation or Terraform, but in the simplest case uploading the ZIP via the console should behave as expected. Note that the Lambda Handler will be `index.handler`
 5. Test the deployment. You can use the content from `./events` as your test events as a representative example of your Contact Flow event
-6. Wire it up!
+6. Wire it up to your Connect Contact Flow!
 
 ## Improving from here
 
