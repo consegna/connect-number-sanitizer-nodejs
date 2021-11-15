@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "lint": "npx eslint ./*.js --fix",
-    "pack": "npm run lint && npm test && npm-pack-zip"
+    "package": "npm run lint && npm test && npm-pack-zip"
   },
   "author": "Justin Susans",
   "dependencies": {

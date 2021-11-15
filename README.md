@@ -18,7 +18,7 @@ To generate the package that can then be used:
 0. For best experience build on a \*nix based computer, as this should ensure any OS specific packages are correctly obtained. You can run on any OS, but you may need further testing once deployed to be sure that there isn't any extra OS specific functionality that has been lost.
 1. Run the regular `npm install` command to install all dependencies
 2. Complete any updates or modifications as required. Be sure to add/alter any tests that would be impacted, as your packaging will fail otherwise.
-3. Run the command `npm run pack`. This will step through linting, unit tests, and finally generate a ZIP file
+3. Run the command `npm run package`. This will step through linting, unit tests, and finally generate a ZIP file. Note that if you use the inbuilt `pack` command you will get a `.tgz` file, which is not desired. You always want the `.zip` version.
 4. Once satisfied upload the ZIP using your preferred method. Recommendation is to use an IaC control, such as CloudFormation or Terraform, but in the simplest case uploading the ZIP via the console should behave as expected
 5. Test the deployment. You can use the content from `./events` as your test events as a representative example of your Contact Flow event
 6. Wire it up!
