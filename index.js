@@ -2,7 +2,7 @@ const phonenum_lib = require('google-libphonenumber');
 const phone_number_format = phonenum_lib.PhoneNumberFormat;
 const phone_util = phonenum_lib.PhoneNumberUtil.getInstance();
 
-exports.handler = async (event) => {
+exports.handler = async (event, context) => {
   /*
     Lambda function to be used to sanitize/validate a phone number is the right
     format both so that the local version can be read back to the user, and

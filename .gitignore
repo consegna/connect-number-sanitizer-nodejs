@@ -296,3 +296,4 @@ packaged.yaml
 
 # Custom additions
 node_modules/
+*.tgz
