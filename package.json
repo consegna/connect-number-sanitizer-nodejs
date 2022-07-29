@@ -1,12 +1,12 @@
 {
   "name": "phonenumber-sanitizer-node",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Phone Number Sanitizer for Amazon Connect, ported to NodeJS from Python",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "jest",
-    "lint": "npx eslint ./*.js --fix",
-    "package": "npm run lint && npm test && npm-pack-zip"
+    "lint": "npx eslint --fix",
+    "package": "npm test && npm-pack-zip"
   },
   "author": "Justin Susans",
   "dependencies": {

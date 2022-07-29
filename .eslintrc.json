@@ -38,7 +38,7 @@
     "overrides": [
         {
             "files": [
-                "*.js"
+                "src/*.js"
             ],
             "rules": {
                 "camelcase": [

@@ -1,4 +1,4 @@
-const index = require('../index');
+const index = require('../src/index');
 const fs = require('fs')
 
 test('Run Main Handler Good Input No Country', async () => {
